@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_notice"
+    android:paddingBottom="11dp"
+    android:paddingTop="11dp">
+
+    <TextView
+        android:id="@+id/tv_show_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="#F0F0F0"
+        android:textSize="24sp"
+        tools:text="中央一套" />
+
+    <View
+        android:id="@+id/view_notice_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_show_name"
+        android:layout_marginBottom="15dp"
+        android:background="#4DF0F0F0" />
+
+    <LinearLayout
+        android:id="@+id/ll_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_notice_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在播出 : "
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <com.gsgd.live.ui.widgets.MarqueeTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_now_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="权利游戏"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:centerText="false"
+            app:edgeEffectColor="#fff"
+            app:edgeEffectEnabled="true"
+            app:edgeEffectWidth="20"
+            app:pauseDuration="500" />
+
+        <TextView
+            android:id="@+id/tv_now_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            tools:text="15:00 - 18:00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_now"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="稍后播出 : "
+            android:textColor="#C0C0C0"
+            android:textSize="20sp" />
+
+        <com.gsgd.live.ui.widgets.MarqueeTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_next_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:text="权利游戏"
+            android:textColor="#C0C0C0"
+            android:textSize="20sp"
+            app:centerText="false"
+            app:edgeEffectColor="#fff"
+            app:edgeEffectEnabled="true"
+            app:edgeEffectWidth="20"
+            app:pauseDuration="500" />
+
+        <TextView
+            android:id="@+id/tv_next_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C0C0C0"
+            android:textSize="20sp"
+            tools:text="15:00 - 18:00" />
+
+    </LinearLayout>
+
+</RelativeLayout>

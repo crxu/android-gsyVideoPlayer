@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_match"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_match_head"
+        android:gravity="center"
+        android:text="新增节目源"
+        android:textColor="#F5F5F5"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_edit_select"
+        android:gravity="center_vertical"
+        android:hint="请输入想要添加节目源的名称"
+        android:inputType="text"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="#F5F5F5"
+        android:textColorHint="#66FFFFFF"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/et_source"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_edit_select"
+        android:gravity="center_vertical"
+        android:hint="请输入想要添加节目源的网址"
+        android:inputType="textUri"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="#F5F5F5"
+        android:textColorHint="#66FFFFFF"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_select"
+        android:text="确认"
+        android:textColor="#FFF"
+        android:textSize="22sp" />
+
+</LinearLayout>

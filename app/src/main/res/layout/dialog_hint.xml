@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="374dp"
+    android:layout_height="267dp"
+    android:background="@drawable/bg_hint_dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_tan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="温馨提示"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#33ffffff" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:paddingEnd="28dp"
+        android:paddingStart="28dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="15dp"
+            android:text="您观看已经超过五个小时了,需要休息一下么？"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_continue_play"
+            android:layout_width="190dp"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@drawable/hint_dialog_btn"
+            android:text="继续观看"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

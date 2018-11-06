@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_vertical_line" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="450dp"
+            android:layout_height="match_parent"
+            android:background="#88000000" />
+
+        <View
+            android:id="@+id/bg_msg_cover"
+            android:layout_width="450dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/no_message_lay"
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableTop="@drawable/xy_message_no_data_icon"
+            android:gravity="center_horizontal"
+            android:text="暂无消息"
+            android:textColor="#F0F0F0"
+            android:textSize="26sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/message_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@drawable/my_bar2"
+            android:scrollbars="vertical" />
+
+        <ImageView
+            android:id="@+id/message_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="475dp"
+            android:src="@drawable/icon_arrow_right"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+</LinearLayout>

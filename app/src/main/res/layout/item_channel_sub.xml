@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/bg_channel_sub_select"
+    android:focusable="true">
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="80dp" />
+
+    <FrameLayout
+        android:id="@+id/fl_play_status"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingBottom="7.5dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="7.5dp">
+
+        <ImageView
+            android:id="@+id/iv_play_status"
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="0dp"
+            tools:src="@drawable/pic_quxiaoyuyue"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <com.gsgd.live.ui.widgets.ScrollTextView
+        android:id="@+id/tv_channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_toRightOf="@id/fl_play_status"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingEnd="25dp"
+        android:paddingStart="0dp"
+        android:singleLine="true"
+        android:textSize="18sp"
+        tools:text="全部频道" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@id/tv_channel_name"
+        android:layout_below="@id/tv_channel_name"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:textSize="12sp"
+        tools:text="07：00"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tv_time"
+        android:layout_marginEnd="14dp"
+        android:gravity="end"
+        android:minWidth="120dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="@string/order"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:minWidth="40dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="@string/play"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

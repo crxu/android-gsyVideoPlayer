@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gsgd.live.ui.leftMenu.MenuTLContentView
+        android:id="@+id/view_tv_live_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.gsgd.live.ui.leftMenu.MenuPLContentView
+        android:id="@+id/view_phone_live_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.gsgd.live.ui.leftMenu.MenuMContentView
+        android:id="@+id/view_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.gsgd.live.ui.leftMenu.MenuCContentView
+        android:id="@+id/view_custom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.gsgd.live.ui.leftMenu.MenuSContentView
+        android:id="@+id/view_setting_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.gsgd.live.ui.leftMenu.MenuOrderContentView
+        android:id="@+id/view_order_play_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</merge>

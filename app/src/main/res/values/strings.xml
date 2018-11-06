@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">HDP</string>
+    <string name="you_follow">您关注的  </string>
+    <string name="enter_play">进入点播</string>
+    <string name="play">点播</string>
+    <string name="order">预约</string>
+    <string name="already_order">已预约</string>
+    <string name="enter_order">进行预约</string>
+    <string name="order_success">预约成功</string>
+    <string name="cancel_order">取消预约</string>
+    <string name="right_away">马上就要开始了</string>
+    <string name="you_order">您预约的  </string>
+    <string name="right_away_look">立即观看</string>
+    <string name="right_away_not_look">暂时不看</string>
+    <string name="no_program_message">暂无节目信息</string>
+    <string name="loading">正在加载...</string>
+    <string name="collect">您还未收藏频道\n频道列表按右键即可收藏哦！</string>
+
+</resources>

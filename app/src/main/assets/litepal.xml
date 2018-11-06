@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="custom_channel" />
+
+    <version value="2" />
+
+    <list>
+        <mapping class="com.gsgd.live.data.model.CustomChannel" />
+        <mapping class="com.gsgd.live.data.model.CollectionChannel" />
+    </list>
+
+</litepal>

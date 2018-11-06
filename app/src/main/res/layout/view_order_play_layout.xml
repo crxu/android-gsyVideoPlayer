@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4b000000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/pic_xuanzedianbo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_follow"
+                android:textColor="@color/color_f0f0f0"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_f0f0f0"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_f0f0f0"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_play"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:background="@drawable/item_order_play_select_bg"
+                android:focusable="true"
+                android:text="@string/enter_play"
+                android:textColor="@color/color_ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="45dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btn_order"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:background="@drawable/item_order_play_normal_bg"
+                android:focusable="true"
+                android:text="@string/enter_order"
+                android:textColor="@color/color_f0f0f0"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</FrameLayout>

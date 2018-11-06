@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_live_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_vertical_line" />
+
+    <!--一级菜单-->
+    <FrameLayout
+        android:layout_width="211dp"
+        android:layout_height="match_parent"
+        android:background="#88000000">
+
+        <com.gsgd.live.ui.widgets.MiddleRecyclerView
+            android:id="@+id/lv_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@drawable/my_bar"
+            android:scrollbars="vertical" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_vertical_line" />
+
+    <ImageView
+        android:id="@+id/iv_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/icon_arrow_right"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--二级菜单-->
+        <RelativeLayout
+            android:id="@+id/rl_channel_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:background="#88000000" />
+
+            <View
+                android:id="@+id/bg_channel_cover"
+                android:layout_width="240dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_empty_tip"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="242dp"
+                android:drawablePadding="18dp"
+                android:drawableTop="@drawable/icon_shoucang_tip"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/collect"
+                android:textColor="#F0F0F0"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.gsgd.live.ui.widgets.MiddleRecyclerView
+                android:id="@+id/lv_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:scrollbarThumbVertical="@drawable/my_bar"
+                android:scrollbars="vertical" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/bg_channel_cover"
+                android:background="@drawable/bg_vertical_line" />
+
+            <ImageView
+                android:id="@+id/iv_right_arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@id/view_line"
+                android:src="@drawable/icon_arrow_right" />
+
+        </RelativeLayout>
+
+        <!--三级菜单-->
+        <FrameLayout
+            android:id="@+id/rl_sub_channel_content"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="241dp"
+            android:background="#88000000"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/tv_empty_tip_sub"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="18dp"
+                android:background="@null"
+                android:drawableTop="@drawable/pic_wujiemuxinxi"
+                android:gravity="center"
+                android:focusable="true"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/no_program_message"
+                android:textColor="@color/color_f0f0f0"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.gsgd.live.ui.widgets.MiddleRecyclerView
+                android:id="@+id/lv_channel_sub"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:scrollbarThumbVertical="@drawable/my_bar"
+                android:scrollbars="vertical" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order_result"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/order_result_bg"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="32dp"
+            android:paddingTop="10dp"
+            android:visibility="invisible"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic_quxiaoyuyue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/order_success"
+                android:textColor="@color/color_f0f0f0"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>

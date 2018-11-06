@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    tools:background="#000">
+
+    <TextView
+        android:id="@+id/tv_phone_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/pic_shouji"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#F0F0F0"
+        android:textSize="18sp"
+        tools:text="iPhone X" />
+
+    <TextView
+        android:id="@+id/tv_phone_unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/icon_setting_arrow_n"
+        android:gravity="center_vertical"
+        android:text="解绑"
+        android:textColor="#F0F0F0"
+        android:textSize="18sp" />
+
+</RelativeLayout>

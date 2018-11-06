@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_setting_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88000000"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_vertical_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_setting_content_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_main_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_reset"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:focusable="true"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <TextView
+                    android:id="@+id/tv_reset_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="恢复默认设置"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/icon_setting_arrow_n"
+                    android:gravity="center_vertical"
+                    android:text="重置所有设置和缓存"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_quiet"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:focusable="true"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <TextView
+                    android:id="@+id/tv_quiet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="看电视免打扰"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_quiet_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/icon_setting_arrow_n"
+                    android:gravity="center_vertical"
+                    android:text="关闭"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_scale"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:focusable="true"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <TextView
+                    android:id="@+id/tv_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="屏幕拉伸"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_scale_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/icon_setting_arrow_n"
+                    android:gravity="center_vertical"
+                    android:text="智能全屏"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_decode"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:focusable="true"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <TextView
+                    android:id="@+id/tv_decode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="解码方式"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_decode_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/icon_setting_arrow_n"
+                    android:gravity="center_vertical"
+                    android:text="智能解码"
+                    android:textColor="#F0F0F0"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_scale_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_scale_smart"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:drawableRight="@drawable/icon_gou_un_select"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="37dp"
+                android:paddingRight="37dp"
+                android:text="智能全屏"
+                android:textColor="#F0F0F0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_scale_full"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:drawableRight="@drawable/icon_gou_un_select"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="37dp"
+                android:paddingRight="37dp"
+                android:text="全屏拉伸"
+                android:textColor="#F0F0F0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_scale_original"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:drawableRight="@drawable/icon_gou_un_select"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="37dp"
+                android:paddingRight="37dp"
+                android:text="原始比例"
+                android:textColor="#F0F0F0"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_decode_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_decode_smart"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:drawableRight="@drawable/icon_gou_un_select"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="37dp"
+                android:paddingRight="37dp"
+                android:text="智能解码"
+                android:textColor="#F0F0F0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_decode_hard"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:drawableRight="@drawable/icon_gou_un_select"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="37dp"
+                android:paddingRight="37dp"
+                android:text="硬解码"
+                android:textColor="#F0F0F0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_decode_soft"
+                android:layout_width="850dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_item_setting_select"
+                android:drawableRight="@drawable/icon_gou_un_select"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="37dp"
+                android:paddingRight="37dp"
+                android:text="软解码"
+                android:textColor="#F0F0F0"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
